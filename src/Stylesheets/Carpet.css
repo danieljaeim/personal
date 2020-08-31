@@ -1,0 +1,124 @@
+.purple-box {
+    position: relative;
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    box-sizing: content-box;
+    background-color: #1b2735;
+}
+
+.tag:hover {
+    text-decoration: underline;
+}
+
+.carpet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(#1b2735, white);
+}
+
+.hammer {
+    position: relative;
+    top: 200px;
+    width: 100px;
+    left: 45%;
+    right: 45%;
+}
+
+.hammer-img {
+    position: relative;
+    width: 200px;
+    height: 150px;
+}
+
+.hammer-img:hover {
+    border: 2px solid gold;
+}
+
+.carpet-about {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 850px;
+    font-size: 14px;
+    word-spacing: 9px;
+    line-height: 30px;
+    text-align: center;
+    top: 100px;
+    box-sizing: border-box;
+}
+
+.carpet-about-me {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 0px 75px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    line-height: 35px;
+    word-spacing: 7px;
+}
+
+.carpet-background {
+    position: absolute;
+    width: 95%;
+    height: 405px;
+    top: -215px;
+    left: 5.5%;
+    background-image: url('../images/powerfulhat.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carpet-photo {
+    position: relative;
+    max-height: 175px;
+    min-width: 100px;
+    z-index: 2;
+    border: 2px gold solid;
+    border-radius: 5%;
+}
+
+.web-traveler {
+    color: plum;
+}
+
+.classes-pointer {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    background-color: blue;
+    right: 50%;
+    top: 200px;
+}
+
+.tag {
+    transform: scaleX(20%);
+}
+
+.tag:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.valiant-attempt {
+    width: 100%;
+    left: 0px;
+    position: relative;
+    display: inline-block;
+    bottom: 200px;
+}
+
+@media screen and (max-width: 550px) {
+    .carpet-background {
+        width: 100%;
+        left: 0%;
+    }
+}
