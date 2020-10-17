@@ -6,7 +6,7 @@
     /* border: 2px whitesmoke solid; */
     background-color: white;
     border-radius: 2%;
-    box-shadow: 20px 20px 28px #85868ac4;
+    box-shadow: 5px 7px 24px #9a9b9e80;
     font-family: 'Josefin Slab';
     animation: 2s ease-in linear;
 }
@@ -76,12 +76,12 @@
     display: block;
     bottom: 50px;
     font-size: 26px;
-    line-height: 40px;
+    line-height: 50px;
     font-weight: 600;
-    width: 90%;
+    width: 88%;
     left: 5%;
     z-index: 3;
-    top: 40px;
+    top: 29px;
     color: white;
 }
 

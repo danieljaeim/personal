@@ -5,7 +5,7 @@
     margin: 20px 30px 50px;
     background-color: white;
     border-radius: 2%;
-    box-shadow: 19px 24px 28px #95979cc0;
+    box-shadow: 14px 15px 28px #9a9b9e57;
     font-family: 'Josefin Slab';
     animation: 20s float ease-in linear infinite;
 }
@@ -84,14 +84,13 @@
 .project-inspect-ext {
     position: relative;
     display: block;
-    bottom: 50px;
+    bottom: 60px;
     font-size: 26px;
     line-height: 40px;
     font-weight: 600;
     width: 90%;
     left: 5%;
     z-index: 3;
-    top: 40px;
     color: white;
 }
 
