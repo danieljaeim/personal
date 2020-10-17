@@ -5,9 +5,20 @@
     margin: 20px 30px 50px;
     background-color: white;
     border-radius: 2%;
-    box-shadow: 12px -8px 19px grey;
+    box-shadow: 19px 24px 28px #95979cc0;
     font-family: 'Josefin Slab';
-    animation: 2s ease-in linear;
+    animation: 20s float ease-in linear infinite;
+}
+
+@keyframes float {
+    0% {
+        position: relative;
+        top: 0px
+    }
+
+    100% {
+        top: 35px;
+    }
 }
 
 .extended-box {

@@ -7,9 +7,10 @@ import Resume from '../images/resume.svg';
 import Email from '../images/email.svg';
 
 export default class Navbar extends Component {
+
     render() {
 
-        const { changeTabs } = this.props;
+        const { changeTabs, currentTab } = this.props;
 
         return (
             <div className="navbar-width">
@@ -18,9 +19,9 @@ export default class Navbar extends Component {
                         <span data-shadow="Daniel Jae Im" className="title-letter"> Daniel Jae Im </span>
                     </div>
                     <div className="selection-tabs">
-                        <div onClick={_ => changeTabs("ABOUT")} className="about-selection selection-hover"> about </div>
-                        <div onClick={_ => changeTabs("PROJECTS")} className="projects-selection selection-hover"> projects </div>
-                        <div onClick={_ => changeTabs("COURSES")} className="classes-selection selection-hover"> courses </div>
+                        <div onClick={_ => changeTabs("ABOUT")} style={{ color: currentTab == "ABOUT" ? 'black' : 'grey' }} className="about-selection selection-hover"> about </div>
+                        <div onClick={_ => changeTabs("PROJECTS")} style={{ color: currentTab == "PROJECTS" ? 'black' : 'grey' }}  className="projects-selection selection-hover"> projects </div>
+                        <div onClick={_ => changeTabs("COURSES")} style={{ color: currentTab == "COURSES" ? 'black' : 'grey' }}  className="classes-selection selection-hover"> courses </div>
                     </div>
                     <div className="icon-hub">
                         <a className="link-linkedin" href="https://www.linkedin.com/in/imdanieljae/" target="_blank">
