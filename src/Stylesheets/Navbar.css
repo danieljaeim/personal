@@ -160,3 +160,22 @@
     top: 9px;
     left: -24px;
 }
+
+.link-email {
+    position: absolute;
+    width: 55px;
+    height: 48px;
+    left: 32px;
+    top:  224px;
+    margin: 22px 0;
+    /* border: black solid 2px; */
+}
+
+.icon-email {
+    position: relative;
+    width: 60px;
+    height: 70px;
+    z-index: 2;
+    top: 5px;
+    left: -20px;
+}

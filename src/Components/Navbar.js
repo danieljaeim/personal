@@ -4,6 +4,7 @@ import '../Stylesheets/Navbar.css';
 import LinkedIn from '../images/linkedin.svg';
 import GitHub from '../images/github.png';
 import Resume from '../images/resume.svg';
+import Email from '../images/email.svg';
 
 export default class Navbar extends Component {
     render() {
@@ -22,14 +23,17 @@ export default class Navbar extends Component {
                         <div onClick={_ => changeTabs("COURSES")} className="classes-selection selection-hover"> courses </div>
                     </div>
                     <div className="icon-hub">
-                        <a className="link-linkedin" href="https://www.linkedin.com/in/imdanieljae/">
+                        <a className="link-linkedin" href="https://www.linkedin.com/in/imdanieljae/" target="_blank">
                             <img className="icon-linkedin" src={LinkedIn} alt="linkedin" />
                         </a>
-                        <a className="link-github" href="https://www.linkedin.com/in/imdanieljae/">
-                            <img className="icon-github" src={GitHub} alt="linkedin" />
+                        <a className="link-github" href="https://github.com/danieljaeim" target="_blank">
+                            <img className="icon-github" src={GitHub} alt="github" />
                         </a>
-                        <a className="link-resume" href="https://drive.google.com/open?id=1M5rqN3ReZTqQrfak0cK8FweRiD-Ux6Vv">
+                        <a className="link-resume" href="https://drive.google.com/file/d/1bG2pePhpnnAea6sqscQz_vYUVyEKQLNj/view?usp=sharing" target="_blank">
                             <img className="icon-resume" src={Resume} alt="resume" />
+                        </a>
+                        <a className="link-email" href = "mailto: imdanieljae@gmail.com" target="_blank">
+                            <img className="icon-email" src={Email} alt="email" />
                         </a>
                     </div>
                 </div>
