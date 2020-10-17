@@ -70,7 +70,7 @@
     height: 405px;
     top: -215px;
     left: 5.5%;
-    background-image: url('../images/powerfulhat.png');
+    /* background-image: url('../images/powerfulhat.png'); */
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -114,11 +114,4 @@
     position: relative;
     display: inline-block;
     bottom: 200px;
-}
-
-@media screen and (max-width: 550px) {
-    .carpet-background {
-        width: 100%;
-        left: 0%;
-    }
 }

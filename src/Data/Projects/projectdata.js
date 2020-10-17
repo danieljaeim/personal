@@ -1,80 +1,83 @@
 const projectData = [
+    // {
+    //     name: "enigma",
+    //     keywords: ["java"],
+    //     description: "Encryption Machine",
+    //     github: "https://github.com/danieljaeim/CS61B-Series/tree/master/proj1/enigma"
+    // },
     {
-        name: "enigma",
-        keywords: ["java"],
-        description: "The legendary encryption machine used during World War 2. \n" +
-                     "Enigma encrypts text files through rotors to a range of 2 billion permutations with complete decryption isomorphism. " +
-                     "Great for sending messages to friends in class. ",
-        github: "https://github.com/danieljaeim/CS61B-Series/tree/master/proj1/enigma"
-    },
-    {
-        name: "crow",
-        keywords: ["python", "flask", "SQL", "postGres"],
-        description: "Server-side rendered Twitter clone I made in Flask, with complete " + 
-                     "sign-up features, password protection, profile editing, a searchbar for users, and like/follow functionality. Seed data was \n " +
-                     "made to upload on a PostGres SQL server. Join the Night's Watch! ",
+        name: "spotluck",
+        keywords: ["javascript", "react"],
+        description: "Spotify Music Recommender",
+        ext: 'Search for new music and artists based on your recent Spotify Feed! Also serves as an in-site music player and track selector that lets you play songs in the browser! Employs the SDK Web player, and a recommendation engine I built through user data. Full demo works best through Github pull.',
+        demo: 'https://obscure-badlands-09960.herokuapp.com/',
         github: "https://github.com/danieljaeim/Crow"
     },
     {
         name: "gifsmos",
-        keywords: ["javascript", "redux", "react"],
-        description: " A front-end wrapper to Desmos' private API. " +
-                     " I worked on the action-creator scaffold that supported the timeline and frame editor features I headed as a project lead. " + 
-                     " For unit testing and integration tests I used the React-Testing Library, increasing testing coverage by 77%.",
+        keywords: ["javascript", "redux", "react", 'css'],
+        description: "Graph Visualizer",
+        ext: 'At Desmos Inc, I created a front-end wrapper that interacts with the company\'s backend graphing API to allow users to simulate graphs and project them as GIFS. In charge of the timeline feature, as well as writing unit tests and integration tests through Jaspar and the React-Testing-Library, increasing testing coverage by 77%.',
+        demo: "http://www.gifsmos.com",
         github: "https://github.com/desmosinc/gifsmos"
     },
     {
+        name: "crow",
+        keywords: ["python", "flask"],
+        description: "Twitter Clone",
+        ext: 'A server-side rendered Twitter clone I built with Flask and HTML templates. Password protected accounts are encrypted and stored in a SQL database.',
+        github: "https://github.com/danieljaeim/Crow"
+    },
+    {
         name: "tablut",
-        keywords: ["java", "games"],
-        description: "A recreation of the 15th century Nordic board game, with a fully fledged AI opponent that looks at least 9 optimal moves ahead, " +
-                     "using alpha-beta pruning for scalability, and heuristics developed specifically for destroying humans. I'm so bad at this game it's nuts.",
+        keywords: ["java"],
+        description: "Alpha Beta Pruning AI",
+        ext: 'For my data structures course, I implemented Tablut and built an AI opponent using alpha-beta pruning and a set of heuristics to efficiently see multiple moves ahead.',
         github: "https://github.com/danieljaeim/CS61B-Series/tree/master/proj2/tablut"
     },
     {
         name: "gitlet",
         keywords: ["java"],
-        description: "A compact version control system with full functionality for adding, " +
-                     " commiting, removing, branching, checking out, and merging local files, and plenty more!" +
-                     " Gitlet tracks local files across commits and retrieves them at will, using Serializable Data Structures",
+        description: "Compact Github Clone",
+        ext: 'A quick and dirty Github clone that serializes files into blobs with SHA-1 hashing. Possible commands are adds, commit, branch, checkout, revert, log, merge',
         github: "https://github.com/danieljaeim/CS61B-Series/tree/master/proj3/gitlet"
     },
     {
         name: "signpost",
-        keywords: ["java", "games"],
-        description: "Modeled after Simon Tatham's very own arrow pointer game, Signpost is a recreation of a nifty " +
-                     "puzzle game where you try connecting all the arrows on the board, in the direction the squares are \n" +
-                     " randomly assigned. This was built as my first major project in Java. GUI was courtesy of the CS61B course staff.",
+        keywords: ["java"],
+        description: "Arrow Minigame",
+        ext: 'A recreation of the Simon Tatham Arrow pointer game. Used recursion to implement successive move logic, and served as a great introduction to OOP.',
         github: "https://github.com/danieljaeim/CS61B-Series/tree/master/proj0/signpost"
     },
     {
         name: "birb",
-        keywords: ["C#/unity", "games"],
-        description: "My team's submission for the 39-hour Berkeley BearJam. \n" +
-                     " In birb, you play as a man facing existential dread with a burning ambition to defeat the sun by chucking birds at...the sun? It's a \n" +
-                     " riveting metaphor for capitalism, at least that's what we told ourselves after pulling an all-night at 5 in the morning. ",
-        github: "https://daidiimon.itch.io/birb"
+        keywords: ["C#", "unity"],
+        ext: 'Implemented movement scripts and character-physics rigging for a 36-hour gamejam hosted by the UC Berkeley GameJam 2019.',
+        description: "Berkeley Gamejam 2019",
+        demo: 'https://daidiimon.itch.io/birb',
+        // github: "https://daidiimon.itch.io/birb"
     },
     {
         name: "seed",
-        keywords: ["C#/unity", "games"],
-        description: "As a seed gladiator, you lobby spells and accrue wins, so " +
-                     "your devotion towards your god strengthens. As you win rounds, unlock new cards and abilities to outwit and decimate your opponent. Made \n " +
-                     " and designed by my Decal Team on the Berkeley Development Club. Check out my design doc",
-        github: "https://seedhanyoung.itch.io/seed",
-        sidelink: "https://docs.google.com/document/d/1sfxhbt0TFKQ5BVOER4rvBqXnMHJt6xBMgZspIu74xeg/edit?usp=sharing"           
+        keywords: ["C#", "unity"],
+        description: "Berkeley Gamejam 2020",
+        github: "https://docs.google.com/document/d/1sfxhbt0TFKQ5BVOER4rvBqXnMHJt6xBMgZspIu74xeg/edit?usp=sharing",
+        demo: 'https://seedhanyoung.itch.io/seed',
+        ext: 'I implemented the battle-cards logic, tile-interactions, and designed the game for the UC Berkeley Gamejam 2020.',
+        // sidelink: "https://docs.google.com/document/d/1sfxhbt0TFKQ5BVOER4rvBqXnMHJt6xBMgZspIu74xeg/edit?usp=sharing"
     },
     {
         name: "fedoracheckers",
-        keywords: ["javascript", "react", "CSS", "games"],
-        description: "My first React project. A straightforward checkers clone that employed theories of encapsulation, and " +
-                     "it proved to be a fun experience recreating checkers in a non-game engine. Capturing logic was an interesting challenge \n" +
-                     "especially before I knew about recursion",
-        github: "https://github.com/danieljaeim/connect-fedora"             
+        keywords: ["javascript", "react", 'html', 'css'],
+        description: "Checkers",
+        ext: 'My first React app. Implemented everything from scratch, from movement, to piece logic. Learned to seperate concerns using dumb components.',
+        github: "https://github.com/danieljaeim/connect-fedora"
     },
     {
         name: "pokecatcher",
-        keywords: ["javascript", "CSS", "games"],
-        description: "A card-flip game inspired by my love for Pokemon. My first ever HTML project and game made using code! Written entirely in Javascript and HTML and CSS.",
+        keywords: ["javascript", "css", 'html'],
+        description: "Card Matcher",
+        ext: 'My first ever app. A simple card-flipping app that keeps track of your score. Inspired by that game everyone knows.',
         github: "https://github.com/danieljaeim/memory-Catcher"
     }
 ]
