@@ -11,22 +11,34 @@ const projectData = [
         description: "Spotify Music Recommender",
         ext: 'Search for new music and artists based on your recent Spotify Feed! Also serves as an in-site music player and track selector that lets you play songs in the browser! Employs the SDK Web player, and a recommendation engine I built through user data. Full demo works best through Github pull.',
         demo: 'https://obscure-badlands-09960.herokuapp.com/',
-        github: "https://github.com/danieljaeim/Crow"
+        github: "https://github.com/danieljaeim/Crow",
+        gif: true,
+    },
+    {
+        name: "pathfinder",
+        keywords: ["react", "javascript", "css"],
+        description: "Pathfinding Visualizer",
+        ext: '[In Progress] A Dynamic Pathfinder visualizer for various pathfinding algorithms, including Djikstra\'s algorithm and A*. Add walls and weighted tiles to arrange the field, with maze generation algorithm coming soon.',
+        demo: 'https://algoogles.herokuapp.com/',
+        github: "https://github.com/danieljaeim/Crow",
+        gif: true
     },
     {
         name: "gifsmos",
         keywords: ["javascript", "redux", "react", 'css'],
         description: "Graph Visualizer",
-        ext: 'At Desmos Inc, I created a front-end wrapper that interacts with the company\'s backend graphing API to allow users to simulate graphs and project them as GIFS. In charge of the timeline feature, as well as writing unit tests and integration tests through Jaspar and the React-Testing-Library, increasing testing coverage by 77%.',
+        ext: 'At Desmos Inc, I created a front-end wrapper that interacts with the company\'s backend graphing API to allow users to simulate graphs and project them as GIFS. ',
         demo: "http://www.gifsmos.com",
-        github: "https://github.com/desmosinc/gifsmos"
+        github: "https://github.com/desmosinc/gifsmos",
+        gif: true
     },
     {
         name: "crow",
         keywords: ["python", "flask"],
         description: "Twitter Clone",
         ext: 'A server-side rendered Twitter clone I built with Flask and HTML templates. Password protected accounts are encrypted and stored in a SQL database.',
-        github: "https://github.com/danieljaeim/Crow"
+        github: "https://github.com/danieljaeim/Crow",
+        gif: true
     },
     {
         name: "tablut",

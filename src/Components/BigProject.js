@@ -34,8 +34,9 @@ export default class BigProject extends React.Component {
     }
 
     render() {
-        const { name, description, keywords, github, currentExtended, sidelink, demo, ext, updateExtended, index } = this.props;
+        const { name, description, keywords, github, demo, ext, updateExtended, index } = this.props;
         let imgSrc = require('../Data/gifs/' + name + '.gif');
+
 
         return (
             <div className={`big-project-box`}>

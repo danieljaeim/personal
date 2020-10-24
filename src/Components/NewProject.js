@@ -34,7 +34,7 @@ export default class NewProject extends React.Component {
     }
 
     render() {
-        const { name, description, keywords, github, currentExtended, sidelink, demo, ext, updateExtended, index } = this.props;
+        const { name, description, keywords, github, currentExtended, sidelink, demo, gif, ext, updateExtended, index } = this.props;
         let imgSrc = require('../images/' + name + '.png');
 
         return (
