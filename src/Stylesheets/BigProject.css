@@ -1,8 +1,14 @@
+@media screen and (max-width:600px) {
+    .big-project-box {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+
 .big-project-box {
     position: relative;
     width: 80%;
     max-width: 960px;
-    margin: 85px auto;
+    margin: 100px auto;
     height: 620px;
     background-color: white;
     border-top-right-radius: 2%;
@@ -79,6 +85,7 @@
     height: auto;
     font-size: 30px;
     font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: white;
     text-align: center;
     opacity: 1;
@@ -87,10 +94,11 @@
 .project-inspect-ext {
     position: relative;
     display: block;
-    top: 100px;
+    top: 50px;
     line-height: 65px;
     font-size: 2.1rem;
     font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 90%;
     left: 5%;
     z-index: 3;
@@ -110,10 +118,11 @@
     left: 45px;
     bottom: 35px;
     font-size: 1.8rem;
-    font-weight: 750;
+    font-weight: 600;
     color: black;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* border: 1px black solid; */
 }
 
@@ -125,9 +134,10 @@
     position: absolute;
     font-size: 1.5rem;
     font-weight: 600;
-    bottom: 40px;
+    bottom: 35px;
     right: 50px;
     text-align: right;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* border: 1px black solid; */
 }
 
@@ -135,13 +145,14 @@
     position: absolute;
     display: inline-block;
     left: calc((100% - 120px) / 2);
-    height: 120px;
+    height: 150px;
     width: 120px;
-    bottom: -50px;
+    bottom: -100px;
     z-index: -2;
     border-radius: 5%;
-    box-shadow: 5px 8px 15px grey;
+    box-shadow: 0px 0px 20px grey;
     opacity: 0.9;
+    color: black;
     /* border: 1px black solid; */
 }
 

@@ -26,7 +26,7 @@ const projectData = [
     {
         name: "gifsmos",
         keywords: ["javascript", "redux", "react", 'css'],
-        description: "Graph Visualizer",
+        description: "Graph to GIF Converter",
         ext: 'At Desmos Inc, I created a front-end wrapper that interacts with the company\'s backend graphing API to allow users to simulate graphs and project them as GIFS. ',
         demo: "http://www.gifsmos.com",
         github: "https://github.com/desmosinc/gifsmos",
