@@ -16,7 +16,7 @@
     z-index: 5;
     top: 50px;
     min-width: 1400px;
-    border-bottom: 2px black solid;
+    border-bottom: 1px black solid;
     background-color: whitesmoke;
 }
 
@@ -34,7 +34,7 @@
     display: flex;
     height: 50px;
     width: 500px;
-    right: 0px;
+    right: 165px;
     bottom: 20px;
     font-family: 'Josefin Slab';
     /* border: 1px white solid; */
@@ -49,7 +49,7 @@
     font-weight: 600;
     text-transform: uppercase;
     padding: 20px 20px;
-    right: 70px;
+    left: 275px;
 }
 
 .selection-hover:hover {
@@ -76,34 +76,26 @@
 
 .icon-hub {
     position: absolute;
-    height: 400px;
-    width: 72px;
-    left: -124px;
-    float: right;
-    z-index: 1;
-    top: 8px;
-    padding: 0;
-    margin: 0;
     display: flex;
+    height: 100px;
+    width: 450px;
+    top: 50px;
+    left: calc((100% - 400px) / 2);
+    z-index: 6;
+    justify-content: space-between;
     flex-wrap: wrap;
-    /* border: 1px black solid; */
+    flex-direction: row;
 }
 
 .link-linkedin {
-    position: absolute;
-    width: 46px;
-    height: 44px;
-    top: 12px;
-    left: 10px;
-    border: black solid 3px;
-    margin: 10px 0;
+    width: 45px;
+    height: 45px;
 }
 
 .icon-linkedin {
-    position: relative;
     z-index: 2;
-    height: 58px;
-    width: 48px;
+    height: 45px;
+    width: 45px;
     color: black;
 }
 
@@ -112,39 +104,15 @@
     opacity: 0.5;
 }
 
-.link-github {
-    position: absolute;
-    width: 45px;
-    height: 49px;
-    left: 30px;
-    border-radius: 50%;
-    top: 79px;
-    margin: 15px 0;
-}
-
 .icon-github {
     position: relative;
-    height: 51px;
-    width: 52px;
-    top: 2px;
-    right: 23px;
-    border: 2px black solid;
-    border-radius: 50%;
+    height: 45px;
+    width: 45px;
 }
 
 .link-github:hover {
     cursor: pointer;
     opacity: 0.5;
-}
-
-.link-resume {
-    position: absolute;
-    width: 52px;
-    height: 29px;
-    left: 32px;
-    top: 148px;
-    margin: 22px 0;
-    /* border: black solid 2px; */
 }
 
 .link-resume:hover {
@@ -153,29 +121,19 @@
 }
 
 .icon-resume {
-    position: relative;
-    width: 54px;
-    height: 64px;
-    z-index: 2;
-    top: 9px;
-    left: -24px;
+    width: 45px;
+    height: 45px;
 }
 
-.link-email {
-    position: absolute;
-    width: 55px;
-    height: 48px;
-    left: 32px;
-    top:  224px;
-    margin: 22px 0;
-    /* border: black solid 2px; */
+.link-email:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 .icon-email {
     position: relative;
-    width: 60px;
-    height: 70px;
+    top: 2px;
+    width: 45px;
+    height: 45px;
     z-index: 2;
-    top: 5px;
-    left: -20px;
 }

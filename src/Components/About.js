@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Stylesheets/About.css';
-import img from '../images/cpv.png'
 
 class About extends React.Component {
     constructor(props) {
@@ -38,7 +37,6 @@ class About extends React.Component {
         return (
             <div className="about-canvas">
                 <div className="about-image-canvas">
-                    <img className="about-image" src={img}></img>
                 </div>
                 <span className="intro-span">
                     <span className="sleeping-phase">

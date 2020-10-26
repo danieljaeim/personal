@@ -75,9 +75,7 @@ export default class ProjectSlot extends Component {
             <Element name="project-scroll">
                     <div className="project-canvas">
                         {projectData.map((proj, i) => 
-                            i < 2 ? 
-                            <BigProject index={i} currentExtended={currentExtended} updateExtended={this.updateExtended} {...proj} /> :
-                            <NewProject index={i} currentExtended={currentExtended} updateExtended={this.updateExtended} {...proj} />
+                            <BigProject index={i} currentExtended={currentExtended} updateExtended={this.updateExtended} {...proj} />
                         )}
                     </div>
             </Element>

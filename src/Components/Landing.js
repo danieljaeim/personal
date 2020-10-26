@@ -29,8 +29,6 @@ export default class Landing extends Component {
           <Route path="/">
             <Navbar currentTab={currentTab} changeTabs={this.changeCurrentTab}/>
             <Cover currentTab= {currentTab}/>
-            {/* <ProjectSlot/> */}
-            {/* <Farewell /> */}
           </Route>
         </Switch>
       </Router>

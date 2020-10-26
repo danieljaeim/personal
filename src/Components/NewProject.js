@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Stylesheets/NewProject.css';
+// import '../Stylesheets/NewProject.css';
 import Javascript from '../images/javascript-icon.svg';
 import Java from '../images/java-icon.svg';
 import ReactIcon from '../images/react-icon.svg';

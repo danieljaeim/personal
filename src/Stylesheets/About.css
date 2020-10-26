@@ -50,12 +50,6 @@
     animation: 
         snoring 2s linear infinite;
 }
-/* 
-@keyframes snoring  {
-    0% {
-        content: '(´-_ゝ -`)'
-    }
-} */
 
 /* moving keyboard */
 .intro-span h1 {

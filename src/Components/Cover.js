@@ -4,7 +4,7 @@ import '../Stylesheets/Cover.css';
 
 import About from './About';
 import ProjectSlot from './ProjectSlot';
-import Courses from './Courses';
+import Contact from './Contact';
 
 export default class Cover extends Component {
 
@@ -29,14 +29,9 @@ export default class Cover extends Component {
 
         return (
             <div>
-                {/* <div className="night">
-                        {new Array(10).fill(0).map(star =>
-                            <div className="shooting_star"></div>
-                        )}
-                    </div> */}
                 <div className="current-tab">
                     <div className="tab-chosen">
-                        {currentTab == "PROJECTS" ? <ProjectSlot /> : currentTab == "ABOUT" ? <About /> : <Courses />}
+                        {currentTab == "PROJECTS" ? <ProjectSlot /> : currentTab == "ABOUT" ? <About /> : <Contact /> }
                     </div>
                 </div>
             </div >
