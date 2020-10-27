@@ -7,18 +7,18 @@ const projectData = [
     // },
     {
         name: "pathfinder",
-        keywords: ["react", "javascript", "css"],
+        keywords: ["javascript", "react", "css"],
         description: "Pathfinding Visualizer",
-        ext: '[In Progress] A Dynamic Pathfinder visualizer for various pathfinding algorithms, including Djikstra\'s algorithm and A*. Add walls and weighted tiles to arrange the field, with maze generation algorithm coming soon.',
+        ext: '[In Progress] A Dynamic Pathfinder visualizer for finding the shortest path between two points. Implemented several algorithms based on Djikstra\'s algorithm and A*. Click tiles to add walls, and the visualizer responds with a new path. Maze generation algorithm coming soon.',
         demo: 'https://algoogles.herokuapp.com/',
         github: "https://github.com/danieljaeim/Crow",
         gif: true
     },
     {
         name: "spotluck",
-        keywords: ["javascript", "react"],
+        keywords: ["javascript", "react", "css"],
         description: "Spotify Music Recommender",
-        ext: 'Spotify Premium music player and artist search modal that leverages the Spotify SDK to recommend brand new artists and music based on your recent listens. More specific than Spotify Discover, and easily refreshable.',
+        ext: '[In Progress] Spotify Premium music player and artist search modal that leverages the Spotify SDK to recommend brand new artists and music based on your recent listens. More specific than Spotify Discover, and easily refreshable.',
         demo: 'https://obscure-badlands-09960.herokuapp.com/',
         github: "https://github.com/danieljaeim/Crow",
         gif: true,

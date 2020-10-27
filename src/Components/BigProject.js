@@ -39,7 +39,12 @@ export default class BigProject extends React.Component {
                     <div className='description-panel'>
                         <a className="project-name" href={github} target="_blank">{name}</a>
                         <span className="project-description"> {description} </span>
-                        <span className="big-tool-box"> {keywords.map(_ => <img className="big-project-icon" src={this.iconMap[_]}></img>)} </span>
+                        <span className="big-tool-box"> {keywords.map(_ =>
+                        <span className="big-project-icon-holder">
+                            <img className="big-project-icon" src={this.iconMap[_]}/>
+                            <span className="tooltiptext"> {_} </span>
+                        </span>
+                        )} </span>
                     </div>
                     {demo ? <span className="project-dropdown">
                         <a href={demo} target="_blank" style={{ textDecoration: 'none' }} className="project-dropdown-arrow"> DEMO </a>
