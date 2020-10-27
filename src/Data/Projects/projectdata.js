@@ -6,15 +6,6 @@ const projectData = [
     //     github: "https://github.com/danieljaeim/CS61B-Series/tree/master/proj1/enigma"
     // },
     {
-        name: "spotluck",
-        keywords: ["javascript", "react"],
-        description: "Spotify Music Recommender",
-        ext: 'Search for new music and artists based on your recent Spotify Feed! Also serves as an in-site music player and track selector that lets you play songs in the browser! Employs the SDK Web player, and a recommendation engine I built through user data. Full demo works best through Github pull.',
-        demo: 'https://obscure-badlands-09960.herokuapp.com/',
-        github: "https://github.com/danieljaeim/Crow",
-        gif: true,
-    },
-    {
         name: "pathfinder",
         keywords: ["react", "javascript", "css"],
         description: "Pathfinding Visualizer",
@@ -22,6 +13,15 @@ const projectData = [
         demo: 'https://algoogles.herokuapp.com/',
         github: "https://github.com/danieljaeim/Crow",
         gif: true
+    },
+    {
+        name: "spotluck",
+        keywords: ["javascript", "react"],
+        description: "Spotify Music Recommender",
+        ext: 'Search for new music and artists based on your recent Spotify Feed! Also serves as an in-site music player and track selector that lets you play songs in the browser! Employs the SDK Web player, and a recommendation engine I built through user data. Full demo works best through Github pull.',
+        demo: 'https://obscure-badlands-09960.herokuapp.com/',
+        github: "https://github.com/danieljaeim/Crow",
+        gif: true,
     },
     {
         name: "gifsmos",

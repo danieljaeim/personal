@@ -126,6 +126,7 @@
     height: 100%;
     bottom: 185px;
     z-index: 3;
+    break-after: always; /* New syntax */
     /* border: 1px white solid; */
 }
 

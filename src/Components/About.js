@@ -27,7 +27,7 @@ class About extends React.Component {
         return rand;
     }
 
-    text = ['…zzzZZZ', '(- o – ) zzZ', 'A guest?'];
+    text = ['…zzzZZZ ', '(- o – ) zzZ', 'A guest?'];
     sleeping_faces = ['(´-_ゝ -`)', '(´-  _ゝ~ -`)', '(´- _ゝ-`)'];
 
     render() {

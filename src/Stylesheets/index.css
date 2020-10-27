@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: whitesmoke;
+  background: white;
   background-color: whitesmoke;
   display: -webkit-box;
   font-family: 'Anton', sans-serif;
@@ -14,4 +14,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 3px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+  border-radius: 5%;
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #000000;
 }

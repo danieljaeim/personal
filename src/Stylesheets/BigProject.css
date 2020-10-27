@@ -1,21 +1,29 @@
-@media screen and (max-width:600px) {
-    .big-project-box {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-}
-
 .big-project-box {
     position: relative;
-    width: 80%;
-    max-width: 960px;
-    margin: 100px auto;
-    height: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: 435px;
+    max-width: 990px;
+    margin: 90px 0px;
+    top: 0px;
     background-color: white;
-    border-top-right-radius: 2%;
-    border-top-left-radius: 2%;
-    box-shadow: 20px 15px 20px grey;
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+    box-shadow: 2px 35px 18px #CCCCCC;
     font-family: 'Josefin Slab';
     animation: 20s float ease-in linear infinite;
+    z-index: 3;
+}
+
+.big-project-box:first-child {
+    margin: 90px 0 80px;
+}
+
+@media only screen and (min-width: 1280px) {
+    .big-project-box {
+        left: calc(50% - 990px / 2);
+    }
 }
 
 @keyframes float {
@@ -23,7 +31,6 @@
         position: relative;
         top: 0px
     }
-
     100% {
         top: 35px;
     }
@@ -35,43 +42,25 @@
 
 @keyframes drop-down {
     100% {
-      transform: translateY(80%);  
+        transform: translateY(80%);
     }
 }
 
 .project-img {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 85%;
+    max-height: 425px;
+    object-fit: cover;
 }
 
 .big-inspect-wrapper {
     position: relative;
-    height: 520px;
+    height: 100%;
     width: 100%;
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
-}
-
-.project-inspect {
-    position: absolute;
-    z-index: 1;
-    background-color: black;
-    opacity: 0.0;
-    width: 100%;
-    height: 520px;
-    color: white;
-    bottom: 50px;
-    font-size: 28px;
-    line-height: 35px;
-    font-weight: 600;
-    width: 100%;
-    left: 0%;
-    z-index: 3;
-    top: 0px;
-    border-top-left-radius: 2%;
-    border-top-right-radius: 2%;
-    color: white;
+    border: 1px black solid;
 }
 
 .project-inspect:hover {
@@ -82,8 +71,7 @@
 .project-inspect-description {
     position: absolute;
     width: 100%;
-    height: auto;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 600;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: white;
@@ -92,17 +80,25 @@
 }
 
 .project-inspect-ext {
-    position: relative;
+    position: absolute;
+    text-align: center;
+    font-size: 100%;
+    margin: auto;
     display: block;
-    top: 50px;
-    line-height: 65px;
-    font-size: 2.1rem;
+    line-height: 25px;
     font-weight: 600;
+    height: 70%;
+    padding: 15% 5% 0 5%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 90%;
-    left: 5%;
     z-index: 3;
+    color: transparent;
+}
+
+.project-inspect-ext:hover {
     color: white;
+    background-blend-mode: darken;
+    background-color: black;
+    opacity: 0.7;
 }
 
 .project-inspect-demo:hover {
@@ -113,17 +109,26 @@
     transform: translateX(340%);
 }
 
+.description-panel {
+    position: relative;;
+    width: 100%;
+    height: 15%;
+    padding: 15px;
+    background-color: white;
+    z-index: 3;
+}
+
 .project-name {
     position: absolute;
-    left: 45px;
-    bottom: 35px;
-    font-size: 1.8rem;
+    left: 5%;
+    top: calc(50% - 15px);
+    line-height: 30px;
+    font-size: 1.4rem;
     font-weight: 600;
     color: black;
     text-transform: uppercase;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* border: 1px black solid; */
 }
 
 .project-name:hover {
@@ -132,44 +137,34 @@
 
 .project-description {
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
-    bottom: 35px;
-    right: 50px;
+    line-height: 50px;
+    top: calc(50% - 25px);
+    right: 5%;
     text-align: right;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* border: 1px black solid; */
 }
 
 .project-dropdown {
-    position: absolute;
+    position: relative;
     display: inline-block;
-    left: calc((100% - 120px) / 2);
-    height: 150px;
-    width: 120px;
-    bottom: -100px;
-    z-index: -2;
+    left: calc((100% - 30%) / 2);
+    height: 100px;
+    width: 30%;
+    max-width: 325px;
+    top: -40px;
+    z-index: 2;
     border-radius: 5%;
-    box-shadow: 0px 0px 20px grey;
+    box-shadow: 0px 10px 35px #CCCCCC;
     opacity: 0.9;
     color: black;
-    /* border: 1px black solid; */
-}
-
-.project-dropdown-extended {
-    position: absolute;
-    display: block;
-    top: 35px;
-    height: 300px;
-    width: 100%;
-    z-index: 1;
-    background-color: whitesmoke;
-    border-radius: 5%;
-    animation: 2s extend ease-in forwards;
+    background-color: white;
 }
 
 .project-dropdown:hover {
-    animation: .1s stretch ease-in forwards;
+    animation: .1s stretch ease-in-out forwards;
 }
 
 @keyframes stretch {
@@ -184,14 +179,14 @@
 .project-dropdown-arrow {
     position: absolute;
     width: 80px;
-    left: 18px;
-    top: 85px;
+    left: calc((100% - 80px) / 2);
+    bottom: -10px;
     height: 50px;
     font-weight: 600;
     z-index: 3;
     text-align: center;
-    font-size: 25px;
-    color: grey;
+    font-size: 1.4rem;
+    color: black;
 }
 
 .project-modem {
@@ -221,25 +216,17 @@
 }
 
 .big-tool-box {
-    position: relative;
-    float: left;
-    width: 80%;
-    height: 50px;
-    left: 10px;
-    bottom: 210px;
-    text-align: left;
-    /* border: 1px white solid; */
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    bottom: -35px;
 }
 
 .big-project-icon {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    margin: 8px 5px;
-    z-index: 2;
-    top: 316px;
-    left: -12px;
-    opacity: 0.8;
+    width: 25px;
+    height: 25px;
+    left: 5%;
 }
 
 .project-ext-info {
@@ -251,4 +238,30 @@
     width: 90%;
     left: 5%;
     z-index: 3;
+}
+
+@media only screen and (max-width: 1018px) {
+
+    .big-project-box {
+        height: 325px; 
+    }
+
+    .big-tool-box {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        bottom: -35px;
+    }
+
+    .big-project-icon {
+        width: 25px;
+        height: 25px;
+        left: 5%;
+    }
+
+    .project-img {
+        height: 80%;
+    }
+
 }
