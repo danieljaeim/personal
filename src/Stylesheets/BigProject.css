@@ -8,9 +8,9 @@
     margin: 90px 0px;
     top: 0px;
     background-color: white;
-    border-top-right-radius: 3%;
-    border-top-left-radius: 3%;
-    box-shadow: 2px 35px 18px #CCCCCC;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    box-shadow: 20px -2px 30px #CCCCCC;
     font-family: 'Josefin Slab';
     animation: 20s float ease-in linear infinite;
     z-index: 3;
@@ -52,6 +52,8 @@
     height: 85%;
     max-height: 425px;
     object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
 }
 
 .big-inspect-wrapper {
@@ -110,7 +112,8 @@
 }
 
 .description-panel {
-    position: relative;;
+    position: relative;
+    ;
     width: 100%;
     height: 15%;
     padding: 15px;
@@ -157,7 +160,7 @@
     top: -40px;
     z-index: 2;
     border-radius: 5%;
-    box-shadow: 0px 10px 35px #CCCCCC;
+    box-shadow: 0px 10px 60px #CCCCCC;
     opacity: 0.9;
     color: black;
     background-color: white;
@@ -227,6 +230,7 @@
     width: 25px;
     height: 25px;
     left: 5%;
+    margin: 0px 5px;
 }
 
 .project-ext-info {
@@ -241,11 +245,9 @@
 }
 
 @media only screen and (max-width: 1018px) {
-
     .big-project-box {
-        height: 325px; 
+        height: 325px;
     }
-
     .big-tool-box {
         position: absolute;
         display: flex;
@@ -253,15 +255,138 @@
         flex-direction: row;
         bottom: -35px;
     }
-
     .big-project-icon {
         width: 25px;
         height: 25px;
         left: 5%;
     }
-
     .project-img {
         height: 80%;
     }
+}
 
+@media only screen and (max-width: 600px) {
+    .big-project-box {
+        height: 325px;
+    }
+    .big-tool-box {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        bottom: -35px;
+    }
+    .big-project-icon {
+        width: 25px;
+        height: 25px;
+        left: 5%;
+    }
+    .project-img {
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative
+    }
+    .big-project-box {
+        height: 265px;
+    }
+    .big-tool-box {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        bottom: -35px;
+        left: -5px;
+    }
+    .big-project-icon {
+        width: 20px;
+        height: 20px;
+        margin: 1px;
+    }
+    .project-img {
+        height: 77%;
+    }
+    .navbar-width {
+        height: 100px;
+        width: 100%;
+    }
+    .project-name {
+        position: absolute;
+        text-align: center;
+        left: 0px;
+        width: 100%;
+        top: calc(50% - 28px);
+        line-height: 30px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .description-panel {
+        position: relative;
+        width: 100%;
+    }
+    .project-description {
+        position: absolute;
+        font-size: .8rem;
+        width: 100%;
+        top: 25px;
+        left: 0;
+        text-align: center;
+        height: 20px;
+    }
+    .project-inspect-ext {
+        font-size: .75rem;
+        padding: 20px 15px;
+    }
+    .project-dropdown {
+        position: relative;
+        display: inline-block;
+        left: calc((100% - 30%) / 2);
+        height: 85px;
+        width: 30%;
+        max-width: 325px;
+        top: -40px;
+        z-index: 2;
+        border-radius: 5%;
+        box-shadow: 0px 10px 35px #CCCCCC;
+        opacity: 0.9;
+        color: black;
+        background-color: white;
+    }
+    .project-dropdown {
+        position: relative;
+        display: inline-block;
+        left: calc((100% - 30%) / 2);
+        height: 70px;
+        width: 30%;
+        max-width: 325px;
+        top: -40px;
+        z-index: 2;
+        border-radius: 5%;
+        box-shadow: 0px 10px 35px #CCCCCC;
+        opacity: 0.9;
+        color: black;
+        background-color: white;
+    }
+    .project-dropdown-arrow {
+        position: absolute;
+        width: 80px;
+        left: calc((100% - 80px) / 2);
+        bottom: -20px;
+        height: 40px;
+        font-weight: 600;
+        z-index: 3;
+        text-align: center;
+        font-size: 1rem;
+        color: black;
+    }
 }

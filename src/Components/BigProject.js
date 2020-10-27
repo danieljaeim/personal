@@ -33,20 +33,20 @@ export default class BigProject extends React.Component {
 
         return (
             <>
-            <div className={`big-project-box`}>
-                <img className="project-img" src={imgSrc}></img>
-                <span className="project-inspect-ext"> {ext} </span>
-                <div className='description-panel'>
-                    <a className="project-name" href={github} target="_blank">{name}</a>
-                    <span className="project-description"> {description} </span>
-                    <span className="big-tool-box"> {keywords.map(_ => <img className="big-project-icon" src={this.iconMap[_]}></img>)} </span>
+                <div className={`big-project-box`}>
+                    <img className="project-img" src={imgSrc}></img>
+                    <span className="project-inspect-ext"> {ext} </span>
+                    <div className='description-panel'>
+                        <a className="project-name" href={github} target="_blank">{name}</a>
+                        <span className="project-description"> {description} </span>
+                        <span className="big-tool-box"> {keywords.map(_ => <img className="big-project-icon" src={this.iconMap[_]}></img>)} </span>
+                    </div>
+                    {demo ? <span className="project-dropdown">
+                        <a href={demo} target="_blank" style={{ textDecoration: 'none' }} className="project-dropdown-arrow"> DEMO </a>
+                    </span> : null
+                    }
                 </div>
-                {demo ? <span className="project-dropdown">
-                    <a href={demo} target="_blank" style={{ textDecoration: 'none' }} className="project-dropdown-arrow"> DEMO </a>
-                </span> : null
-                }
-            </div>
-            <div style={{ flexBasis: '100%', height: 0 }} />
+                <div style={{ flexBasis: '100%', height: 0 }} />
             </>
         );
     }
