@@ -1,16 +1,17 @@
 .navbar-width {
     position: fixed;
     width: 100%;
-    height: 75px;
+    height: 80px;
     background-color: whitesmoke;
     /* border-bottom: 3px black solid; */
     z-index: 4;
-    background-color: whitesmoke;
+    background-color: white;
+    opacity: 0.95;
 }
 
 @media only screen and (min-width: 1920px) {
     .navbar-width {
-        background-color: transparent;
+        background-color: white;
     }
 }
 
@@ -96,6 +97,10 @@
     width: 18px;
     height: 18px;
     margin: 0 18px;
+}
+
+.icon:hover {
+    opacity: 0.5;
 }
 
 @media only screen and (max-width: 850px) {

@@ -36,13 +36,9 @@ class About extends React.Component {
 
         return (
             <div className="about-canvas">
-                <div className="about-image-canvas">
-                </div>
                 <span className="intro-span">
-                    <span className="sleeping-phase">
                         <span className="sleeping-faces"> {this.sleeping_faces[sleeping_index]} </span>
                         <span className="sleeping-text">{this.text[index]}</span>
-                    </span>
                     {/* <h1>  {this.text[index]} </h1> */}
                     {/* <ul>  Tough times, huh... *show clips of news reel* </ul>
                     <ul>  Well, don't look at me. I didn't have anything to do with it. </ul>

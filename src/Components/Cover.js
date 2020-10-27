@@ -28,13 +28,13 @@ export default class Cover extends Component {
         let { currentTab } = this.props;
 
         return (
-            <div>
+            <>
                 <div className="current-tab">
                     <div className="tab-chosen">
                         {currentTab == "PROJECTS" ? <ProjectSlot /> : currentTab == "ABOUT" ? <About /> : <Contact /> }
                     </div>
                 </div>
-            </div >
+            </>
         )
     }
 }
