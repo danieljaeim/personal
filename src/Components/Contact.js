@@ -14,7 +14,7 @@ class Contact extends React.Component {
                 <a className="link-github" href="https://github.com/danieljaeim" target="_blank">
                     <img className="icon-github" src={GitHub} alt="github" />
                 </a>
-                <a className="link-resume" href="https://drive.google.com/file/d/1bG2pePhpnnAea6sqscQz_vYUVyEKQLNj/view?usp=sharing" target="_blank">
+                <a className="link-resume" href="https://drive.google.com/file/d/1cgG3uldm_4H7J0a_qTjDEc4iqXLmISBS/view?usp=sharing" target="_blank">
                     <img className="icon-resume" src={Resume} alt="resume" />
                 </a>
                 <a className="link-email" href="mailto: imdanieljae@gmail.com" target="_blank">
