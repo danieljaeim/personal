@@ -6,6 +6,15 @@ const projectData = [
     //     github: "https://github.com/danieljaeim/CS61B-Series/tree/master/proj1/enigma"
     // },
     {
+        name: "pathfinder",
+        keywords: ["javascript", "react", "css"],
+        description: "Pathfinding Visualizer",
+        ext: '[In Progress] A Dynamic Pathfinder visualizer for finding the shortest path between two points. Implemented several algorithms based on Djikstra\'s algorithm and A*. Click tiles to add walls, or use the maze generator and the visualizer responds with the optimal path!',
+        demo: 'https://algoogles.herokuapp.com/',
+        github: "https://github.com/danieljaeim/AlGoggles",
+        gif: true
+    },
+    {
         name: "spotluck",
         keywords: ["javascript", "react", "css"],
         description: "Spotify Music Recommender",
@@ -13,15 +22,6 @@ const projectData = [
         demo: 'https://serene-hollows-75057.herokuapp.com/',
         github: "https://github.com/danieljaeim/spotluck",
         gif: true,
-    },
-    {
-        name: "pathfinder",
-        keywords: ["javascript", "react", "css"],
-        description: "Pathfinding Visualizer",
-        ext: '[In Progress] A Dynamic Pathfinder visualizer for finding the shortest path between two points. Implemented several algorithms based on Djikstra\'s algorithm and A*. Click tiles to add walls, and the visualizer responds with a new path. Maze generation algorithm coming soon.',
-        demo: 'https://algoogles.herokuapp.com/',
-        github: "https://github.com/danieljaeim/AlGoggles",
-        gif: true
     },
     {
         name: "gifsmos",

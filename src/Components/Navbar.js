@@ -25,7 +25,7 @@ export default class Navbar extends Component {
                         <a className="link-github" href="https://github.com/danieljaeim" target="_blank">
                             <img className="icon" src={GitHub} alt="github" />
                         </a>
-                        <a className="link-resume" href="https://drive.google.com/file/d/1bG2pePhpnnAea6sqscQz_vYUVyEKQLNj/view?usp=sharing" target="_blank">
+                        <a className="link-resume" href="https://drive.google.com/file/d/1cgG3uldm_4H7J0a_qTjDEc4iqXLmISBS/view?usp=sharing" target="_blank">
                             <img className="icon" src={Resume} alt="resume" />
                         </a>
                         <a className="link-email" href="mailto: imdanieljae@gmail.com" target="_blank">
